@@ -1,11 +1,14 @@
 const puppeteer = require("puppeteer");
 
-const freeProxies = ["115.147.63.59:8081", "49.4.117.146:3128"];
+const proxies = [
+  "proxy1.example.com:port",
+  "proxy2.example.com:port",
+  // Add more proxies here
+];
 
 (async () => {
   // Choose a random proxy
-  const randomProxy =
-    freeProxies[Math.floor(Math.random() * freeProxies.length)];
+  const randomProxy = proxies[Math.floor(Math.random() * proxies.length)];
 
   // Launch Puppeteer with proxy
   const browser = await puppeteer.launch({
