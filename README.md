@@ -22,14 +22,14 @@ node proxy-scraper.js
 
 ### 3. Bright Data Scraping Browser
 
-Create a `.env` file and add your Scraping Browser endpoint:
+Create a `.env` file and add your Scraping Browser endpoint (replace YOUR_BRIGHT_DATA_WS_ENDPOINT with your Bright Data Scraping Browser WebSocket endpoint):
 ```
-SBR_WS_ENDPOINT=wss://brd-customer-USERNAME-zone-ZONE_NAME:PASSWORD@brd.superproxy.io:9222
+SBR_WS_ENDPOINT=YOUR_BRIGHT_DATA_WS_ENDPOINT
 ```
 
 Example:
 ```
-SBR_WS_ENDPOINT=wss://brd-customer-hl_7abed23d-zone-scraping_browser1:t82rjavddho6@brd.superproxy.io:9222
+SBR_WS_ENDPOINT=wss://brd-customer-ab_3abcd12e-zone-scraping_browser1:t45abcdefgh1@brd.superproxy.io:9222
 ```
 
 Then run:
