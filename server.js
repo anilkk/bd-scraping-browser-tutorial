@@ -1,5 +1,6 @@
 const express = require("express");
 const puppeteer = require("puppeteer");
+require('dotenv').config();
 
 const app = express();
 const PORT = 3000;
@@ -8,7 +9,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // Your Bright Data Scraping Browser WebSocket endpoint
-const SBR_WS_ENDPOINT = "YOUR_BRIGHT_DATA_WS_ENDPOINT";
+const SBR_WS_ENDPOINT = process.env.SBR_WS_ENDPOINT;
 
 /**
  * POST /scrape
